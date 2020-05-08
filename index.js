@@ -973,8 +973,8 @@ bot.on('message', async (msg) => {
                 try { m.reactions.find(r => r.emoji.name == emoji).users.remove(msg.author.id); } catch(err) {}
             }
         }
-    }//command helpの()
-});//client.onの()
+    }//command helpの
+});//client.onの
 
 bot.on('ready', () => {
     bot.user.setPresence({ game: { name: "[r!help]でヘルプを表示!" + "現在のバージョン：" + version} });
