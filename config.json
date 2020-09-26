@@ -1,10 +1,4 @@
 {
-    "prefix": "r!",
-    "log_channel": "654262352400613376",
-    "admin_id": "502816456052834314",
-    "official_guild_id": "629927765189197824",
-    "question_opench_id": "673030906306494494",
-    "question_closech_id": "673030925864534024",
-    "teian_channel_id": "655729271607787522",
-    "コメント": "log_channel:コマンドログの部分  admin_id:開発者コマンド official: 公式鯖用機能 質問とか question_opench:質問のopenカテゴリID question_closech:質問のcloseカテゴリID  teian_channel_id: 提案コマンドの受け取るチャンネルID"
+    "prefix":"rt!",
+    "token":"NzQ2ODg4Njk2MjgzNzkxMzgx.X0G4TQ.FFMeuMh11OwBOC-1-_-cXh2k5fk"
 }
