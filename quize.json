@@ -1,0 +1,14 @@
+[
+	{
+		"question": "空の色は？",
+		"answers": ["青","あお","ao","アオ","ｱｵ","blue"]
+	},
+	{
+		"question": "アルファベットには何文字ある？",
+		"answers": ["26", "twenty-six", "twenty six", "twentysix","にじゅうろく","ニジュウロク","ﾆｼﾞｭｳﾛｸ"]
+	},
+	{
+		"question":"このBotの言語は？",
+		"answers":["js","JS","Javascript"]
+	}
+]
