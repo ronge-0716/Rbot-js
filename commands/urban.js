@@ -1,13 +1,14 @@
 module.exports = {
 	name: 'ur',
-    description: 'ur',
+    description: `引数に入力された言葉の意味を検索します。\n英吾の単語しか検索できません。説明文はgoogle翻訳を使用しているため、所々文章がおかしいですが、ご了承ください。`,
     cooldown: 5,
 	async execute(message, args) {
         const Discord = require('discord.js');
         const querystring = require('querystring');
+        const config = require('../config.json')
 
         if (!args.length) {
-            return message.channel.send('You need to supply a search term!');
+            return message.channel.send(`検索する単語が入力されていません！\`${config.prefix}ur [検索したい単語(英語)]\`で検索できます。`);
         }
 
         const query = querystring.stringify({ term: args.join(' ') });
@@ -15,7 +16,7 @@ module.exports = {
         const { list } = await fetch(`https://api.urbandictionary.com/v0/define?${query}`).then(response => response.json());
 
         if (!list.length) {
-            return message.channel.send(`No results found for **${args.join(' ')}**.`);
+            return message.channel.send(`検索しましたが、${args.join(' ')}という単語は見つかりませんでした...`);
         }
 
         const trim = (str, max) => ((str.length > max) ? `${str.slice(0, max - 3)}...` : str);

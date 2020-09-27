@@ -1,6 +1,6 @@
 module.exports = {
 	name: 'quiz',
-    description: 'zuize',
+    description: `クイズコマンドです。ランダムに問題が表示されるので、そのあとに答えを発言してください。\n制限時間は30秒です。\n制限時間内ならば何回でも間違えることが可能です。`,
     cooldown: 5,
 	execute(message, args) {
         const quiz = require('../quize.json');

@@ -2,7 +2,7 @@ const { prefix } = require('../config.json');
 
 module.exports = {
 	name: 'help',
-	description: 'List all of my commands or info about a specific command.',
+	description: 'コマンド一覧の表示やコマンドのヘルプを表示します',
 	aliases: ['commands','helps'],
 	usage: '[command name]',
 	cooldown: 5,
@@ -13,10 +13,10 @@ module.exports = {
         if (!args.length) {
 
             data.push('コマンドリスト:');
-            data.push(commands.map(command => `${command.name}`).join('/'));
+            data.push(commands.map(command => `${command.name}`).join(' / '));
             data.push(`\`rt!help [command name]\`でコマンドのヘルプを表示します`);
 
-            return message.channel.send(data, { split: true })
+             return message.channel.send(data, { split: true })
         }
 
         const name = args[0].toLowerCase();
@@ -33,7 +33,7 @@ module.exports = {
 
         data.push(`\nクールダウン: ${command.cooldown || 3} second(s)`);
 
-        message.channel.send(`\`\`\`${data}\`\`\``, { split: true });
+         message.channel.send(`\`\`\`${data}\`\`\``, { split: true });
 
 	},
 };

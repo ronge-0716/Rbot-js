@@ -9,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "canvas": "^2.6.1",
+    "discord-giveaways": "^4.2.1",
     "discord.js": "^12.3.1",
+    "ms": "^2.1.2",
     "node-fetch": "^2.6.1",
     "translation-google": "^0.2.1",
     "winston": "^3.3.3"
