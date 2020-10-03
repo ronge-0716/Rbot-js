@@ -236,4 +236,4 @@ client.on('ready', message =>{
     setTimeout(bot_ping, 1000);
   })
 
-client.login(TOKEN)
+client.login(process.env.TOKEN)
