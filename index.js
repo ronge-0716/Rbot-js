@@ -231,7 +231,7 @@ client.on('guildMemberRemove', async member => {
 
 client.on('ready', message =>{
     function bot_ping(){
-      client.user.setActivity(`[r!help] | ${client.guilds.size} guilds | varsion:${config.varsion}, ping:${client.ws.ping}ms`,{type:'PLAYING'});
+      client.user.setActivity(`[r!help] | ${client.guilds.cache.size} guilds | varsion:${config.varsion}, ping:${client.ws.ping}ms`,{type:'PLAYING'});
     }
     setTimeout(bot_ping, 1000);
   })
